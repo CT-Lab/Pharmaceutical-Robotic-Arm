@@ -10,3 +10,6 @@
 <figure class="third">
     <img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="200"/><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="200"/>
 </figure>
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="200" height="260" ></div>
+
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="200" height="260" ></div>
