@@ -9,8 +9,8 @@
 ![image](https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif)![image](https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_200537.gif)
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/KelvinYang0320"><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="100px;" alt=""/><br /><sub><b>KelvinYang0320</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/z0978916348"><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="100px;" alt=""/><br /><sub><b>Chuang-Kai-Yu</b></sub></a><br /></td>
+    <td align="center"><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="200px;" alt=""/><br /><sub><b>Move Down</b></sub><br /></td>
+    <td align="center"><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_200537.gif" width="200px;" alt=""/><br /><sub><b>Move Up</b></sub><br /></td>
   </tr>
 </table>
 
