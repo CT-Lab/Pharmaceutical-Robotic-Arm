@@ -12,6 +12,4 @@
    <td align="center"><b>Move Up</b><br /><sub><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_200537.gif" width="400px;" alt=""/></sub><br /></td>
   </tr>
 </table>
-### Trend
-
 ![image](https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/%E5%9C%96%E7%89%873.png)
