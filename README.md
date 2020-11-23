@@ -6,6 +6,6 @@
 * Webots: Open webots with /Dopamine_Webots/XXX.wbt.
 ## Current Achievements and work
 ### Achievements: Move Down and Reach a Target via DDPGAgent
-<figure class="half">
+<figure class="third">
     <img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="200"/><img src="https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/img/20201123_190054.gif" width="200"/>
 </figure>
