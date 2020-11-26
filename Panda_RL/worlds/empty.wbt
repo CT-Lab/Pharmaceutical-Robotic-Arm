@@ -1,0 +1,370 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      material1 "finger-contactMaterial"
+      material2 "can-contactMaterial"
+      coulombFriction [
+        100
+      ]
+      frictionRotation 1 1
+    }
+  ]
+}
+Viewpoint {
+  fieldOfView 0.9
+  orientation -0.37866338492143037 0.8697893087562785 0.31635517902054316 1.5238584395202284
+  position 4.752230455010791 4.079322671425171 0.921214121098091
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  castShadows FALSE
+}
+RectangleArena {
+  translation -0.08 0 0
+  floorSize 5 5
+}
+DEF TARGET_ Solid {
+  translation 0.566522 0.67 0.03
+  scale 0.5 0.5 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+        IBLStrength 0
+        emissiveIntensity 0
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+}
+WoodenBox {
+  translation 0.63 0.3 0
+  size 1 0.6 1
+}
+WoodenBox {
+  translation -0.38 0.3 -0.61
+  name "wooden box(2)"
+  size 1 0.6 1
+}
+WoodenBox {
+  translation -0.03 0.3 0
+  name "wooden box(1)"
+  size 0.3 0.6 0.2
+}
+DEF supervisor Robot {
+  children [
+    DEF CAM_D Transform {
+      translation 1.3 0 -1.3
+      children [
+        SliderJoint {
+          jointParameters JointParameters {
+            axis 0 1 0
+          }
+          device [
+            PositionSensor {
+              name "linear_positionSensor_CAM_D"
+            }
+            DEF linear_motor_CAM_D LinearMotor {
+              name "linear_motor_CAM_D"
+            }
+          ]
+          endPoint Solid {
+            children [
+              Transform {
+                translation 0 0.69 0
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      position 2.333
+                      axis 0 1 0
+                    }
+                    device [
+                      DEF rotational_positionSensor_CAM_D PositionSensor {
+                        name "rotational_positionSensor_CAM_D"
+                      }
+                      RotationalMotor {
+                        name "rotational_motor_CAM_D"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.028932643771034914 0 0.027620682910065676
+                      rotation 0 1 0 2.333
+                      children [
+                        Shape {
+                          appearance PBRAppearance {
+                          }
+                          geometry Box {
+                            size 0.1 0.1 0.1
+                          }
+                        }
+                        DEF CAM_C Camera {
+                          name "CAM_D"
+                          recognition Recognition {
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              Shape {
+                appearance PBRAppearance {
+                }
+                geometry Cylinder {
+                  height 1.5
+                  radius 0.05
+                }
+              }
+            ]
+            name "solid(3)"
+          }
+        }
+      ]
+    }
+    DEF CAM_C Transform {
+      translation -1.3 0 -1.3
+      children [
+        SliderJoint {
+          jointParameters JointParameters {
+            axis 0 1 0
+          }
+          device [
+            PositionSensor {
+              name "linear_positionSensor_CAM_C"
+            }
+            DEF linear_motor_CAM_C LinearMotor {
+              name "linear_motor_CAM_C"
+            }
+          ]
+          endPoint Solid {
+            children [
+              Transform {
+                translation 0 0.69 0
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      position -2.333
+                      axis 0 1 0
+                    }
+                    device [
+                      DEF rotational_positionSensor_CAM_C PositionSensor {
+                        name "rotational_positionSensor_CAM_C"
+                      }
+                      RotationalMotor {
+                        name "rotational_motor_CAM_C"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation 0.028932643771034914 0 0.027620682910065676
+                      rotation 0 -1 0 2.333
+                      children [
+                        Shape {
+                          appearance PBRAppearance {
+                          }
+                          geometry Box {
+                            size 0.1 0.1 0.1
+                          }
+                        }
+                        DEF CAM_C Camera {
+                          name "CAM_C"
+                          recognition Recognition {
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              Shape {
+                appearance PBRAppearance {
+                }
+                geometry Cylinder {
+                  height 1.5
+                  radius 0.05
+                }
+              }
+            ]
+            name "solid(2)"
+          }
+        }
+      ]
+    }
+    DEF CAM_B Transform {
+      translation -1.3 0 1.3
+      children [
+        SliderJoint {
+          jointParameters JointParameters {
+            axis 0 1 0
+          }
+          device [
+            PositionSensor {
+              name "linear_positionSensor_CAM_B"
+            }
+            DEF linear_motor_CAM_B LinearMotor {
+              name "linear_motor_CAM_B"
+            }
+          ]
+          endPoint Solid {
+            children [
+              Transform {
+                translation 0 0.69 0
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      position -0.785
+                      axis 0 1 0
+                    }
+                    device [
+                      DEF rotational_positionSensor_CAM_B PositionSensor {
+                        name "rotational_positionSensor_CAM_B"
+                      }
+                      RotationalMotor {
+                        name "rotational_motor_CAM_B"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation 0.028273007244214634 0 -0.028295530766687976
+                      rotation 0 -1 0 0.7850000000000003
+                      children [
+                        Shape {
+                          appearance PBRAppearance {
+                          }
+                          geometry Box {
+                            size 0.1 0.1 0.1
+                          }
+                        }
+                        DEF CAM_B Camera {
+                          name "CAM_B"
+                          recognition Recognition {
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              Shape {
+                appearance PBRAppearance {
+                }
+                geometry Cylinder {
+                  height 1.5
+                  radius 0.05
+                }
+              }
+            ]
+            name "solid(1)"
+          }
+        }
+      ]
+    }
+    DEF CAM_A Transform {
+      translation 1.3 0 1.3
+      children [
+        SliderJoint {
+          jointParameters JointParameters {
+            axis 0 1 0
+          }
+          device [
+            PositionSensor {
+              name "linear_positionSensor_CAM_A"
+            }
+            DEF linear_motor_CAM_A LinearMotor {
+              name "linear_motor_CAM_A"
+            }
+          ]
+          endPoint Solid {
+            children [
+              Transform {
+                translation 0 0.69 0
+                children [
+                  HingeJoint {
+                    jointParameters HingeJointParameters {
+                      position 0.785
+                      axis 0 1 0
+                    }
+                    device [
+                      DEF rotational_positionSensor_CAM_A PositionSensor {
+                        name "rotational_positionSensor_CAM_A"
+                      }
+                      RotationalMotor {
+                        name "rotational_motor_CAM_A"
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.028273007244214634 0 -0.028295530766687976
+                      rotation 0 1 0 0.7850000000000003
+                      children [
+                        Shape {
+                          appearance PBRAppearance {
+                          }
+                          geometry Box {
+                            size 0.1 0.1 0.1
+                          }
+                        }
+                        DEF CAM_A Camera {
+                          name "CAM_A"
+                          recognition Recognition {
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+              Shape {
+                appearance PBRAppearance {
+                }
+                geometry Cylinder {
+                  height 1.5
+                  radius 0.05
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    Receiver {
+    }
+    Emitter {
+    }
+  ]
+  controller "supervisorController"
+  supervisor TRUE
+}
+DEF TARGET Solid {
+  translation 0.566522 0.9 0.024127
+  scale 0.5 0.5 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        transparency 0.8
+        metalness 0
+        IBLStrength 0
+        emissiveIntensity 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        metalness 0
+        IBLStrength 0
+        emissiveIntensity 0
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+}
