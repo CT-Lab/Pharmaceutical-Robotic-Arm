@@ -8,6 +8,7 @@
 ## Branch
 * [Moving Up/Down with RL and pipe](https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/blob/Dopamine_Webots/README.md)
 * [Rule-based with IK](https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/tree/IKPY_Only)
+* [Cameras and Image Recognition Simulator](https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/tree/Camera)
 * [Goal Reaching with RL and deepbots](https://github.com/CT-Lab/Pharmaceutical-Robotic-Arm/tree/deepbots_TargetReaching)
 
 ## Contributor
